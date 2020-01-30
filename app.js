@@ -4,7 +4,7 @@ const app = express();
 const puppeteer = require('puppeteer');
 const port = process.env.PORT || 8080;
 const validUrl = require('valid-url');
-const urlToScreenshot = 'http://yandex.ru'
+const urlToScreenshot = 'http://github.com'
 
 console.log('HEADLESS MODE = '+process.env.HEADLESS)
 
@@ -20,14 +20,14 @@ var parseUrl = function(url) {
 let browser,page;
 
 const nonHeadFlag = {
-    executablePath: 'google-chrome-stable',
-    headless: false,
+    headless: false
 };
 
 (async () => {
     
     browser = await puppeteer.launch(Object.assign({
         args: ['--no-sandbox', '--disable-setuid-sandbox']},
+	{executablePath: 'google-chrome-stable'},
         process.env.HEADLESS === 'false' ? nonHeadFlag : void null));
 
     page = await browser.newPage();
@@ -48,7 +48,7 @@ app.get('/ya', function(req, res) {
             res.send(buffer)
         });
 
-        // await browser.close();
+        await browser.close();
     })();
     // res.send(urlToScreenshot)
 
