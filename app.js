@@ -4,7 +4,7 @@ const app = express();
 const puppeteer = require('puppeteer');
 const port = process.env.PORT || 8080;
 const validUrl = require('valid-url');
-const urlToScreenshot = 'yandex.ru'
+const urlToScreenshot = 'http://yandex.ru'
 
 console.log('HEADLESS MODE = '+process.env.HEADLESS)
 
