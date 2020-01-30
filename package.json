@@ -15,7 +15,7 @@
   "devDependencies": {},
   "scripts": {
     "dev": "HEADLESS=false nodemon",
-    "start": "node app.js",
+    "start": "HEADLESS=true node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
