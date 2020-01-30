@@ -19,7 +19,6 @@ var parseUrl = function(url) {
 
 let browser,page;
 
-
 const nonHeadFlag = {
     executablePath: 'google-chrome-stable',
     headless: false,
