@@ -1,0 +1,213 @@
+[
+  {
+    "name": "sc.ASP.NET_SESSIONID",
+    "value": "xq0hbhslmuuoj2fpxdxcftqb",
+    "domain": "www.upwork.com",
+    "path": "/",
+    "expires": -1,
+    "size": 44,
+    "httpOnly": false,
+    "secure": false,
+    "session": true
+  },
+  {
+    "name": "_fbp",
+    "value": "fb.1.1580420282046.1641088438",
+    "domain": ".upwork.com",
+    "path": "/",
+    "expires": 1588196282,
+    "size": 33,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "spt",
+    "value": "e8c5c00e-c4a7-4f86-99cf-13460d3e2d2a",
+    "domain": ".upwork.com",
+    "path": "/",
+    "expires": 1611956282.76577,
+    "size": 39,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "sc.InTg",
+    "value": "a",
+    "domain": "www.upwork.com",
+    "path": "/",
+    "expires": -1,
+    "size": 8,
+    "httpOnly": false,
+    "secure": false,
+    "session": true
+  },
+  {
+    "name": "_sp_id.2a16",
+    "value": "a49eea49-6359-4b60-9d05-a8464c54128a.1580420281.1.1580420282.1580420281.3b555a1f-3e7b-4284-bf3e-2c6f1c11d444",
+    "domain": "www.upwork.com",
+    "path": "/",
+    "expires": 1643492281,
+    "size": 119,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "_sp_ses.2a16",
+    "value": "*",
+    "domain": "www.upwork.com",
+    "path": "/",
+    "expires": 1580422081,
+    "size": 13,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "_pxvid",
+    "value": "f2ed5160-43a7-11ea-be63-e159c319c79f",
+    "domain": "www.upwork.com",
+    "path": "/",
+    "expires": 1627076281,
+    "size": 42,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "visitor_id",
+    "value": "91.188.188.224.1580419920702450",
+    "domain": ".upwork.com",
+    "path": "/",
+    "expires": 1612042677.730669,
+    "size": 41,
+    "httpOnly": false,
+    "secure": true,
+    "session": false
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.2.1215350428.1580420281",
+    "domain": ".upwork.com",
+    "path": "/",
+    "expires": 1643492281,
+    "size": 30,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "_gid",
+    "value": "GA1.2.961829005.1580420281",
+    "domain": ".upwork.com",
+    "path": "/",
+    "expires": 1580506681,
+    "size": 30,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "__cfduid",
+    "value": "dbe86589cee60c173a06818632e9a13001580419921",
+    "domain": ".upwork.com",
+    "path": "/",
+    "expires": 1583012277.890098,
+    "size": 51,
+    "httpOnly": true,
+    "secure": false,
+    "session": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "__cfruid",
+    "value": "506a671442c0d193e4c1fd101d57e65b7f6c5893-1580419921",
+    "domain": ".upwork.com",
+    "path": "/",
+    "expires": -1,
+    "size": 59,
+    "httpOnly": true,
+    "secure": true,
+    "session": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "device_view",
+    "value": "full",
+    "domain": ".upwork.com",
+    "path": "/",
+    "expires": 1583098677.133479,
+    "size": 15,
+    "httpOnly": true,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "session_id",
+    "value": "5d77acb9b24ba6967b47d7c9c2c8b2b1",
+    "domain": ".upwork.com",
+    "path": "/",
+    "expires": -1,
+    "size": 42,
+    "httpOnly": true,
+    "secure": true,
+    "session": true
+  },
+  {
+    "name": "XSRF-TOKEN",
+    "value": "78423bd6041e6e910ba88da15afb6818",
+    "domain": ".upwork.com",
+    "path": "/",
+    "expires": -1,
+    "size": 42,
+    "httpOnly": false,
+    "secure": true,
+    "session": true
+  },
+  {
+    "name": "_pxff_wa",
+    "value": "1",
+    "domain": "www.upwork.com",
+    "path": "/",
+    "expires": 1580420341,
+    "size": 9,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "_gat_UA-62227314-1",
+    "value": "1",
+    "domain": ".upwork.com",
+    "path": "/",
+    "expires": 1580420341,
+    "size": 19,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "_px3",
+    "value": "a88d9d117e2d893ac2db857d9516a79e774d9dce1cb964f07a8c175704e67abf:uLe/15xbCeUB4Dm+q0ylAmLIJYBL3/OWBBFQsZ9WD3L6HNxtG8tlkyfzlEohosO1nh4Fss5d9n7JDwD2KoQvaQ==:1000:JcUbwbxUny34Wz+o5EM7Tw3zULPZn5FVqR4MN1gF+zgzGkDyJpVmGMsUsGv4AJKEHOBba/C+m84+kjkBBajhS7I75k5DM3LMYLle/bDgvF7x+VMTfUraLfiXu9wpoQqANQybuNbBH7gdHywHANTQe+hdvBxRvJtlmq8RdSFg754=",
+    "domain": "www.upwork.com",
+    "path": "/",
+    "expires": 1580593082,
+    "size": 335,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "_pxhd",
+    "value": "f858165279b8fd955140c05086ee4601b342ed409ef16b8d6a74f113a11fb5ee:f2ed5160-43a7-11ea-be63-e159c319c79f",
+    "domain": "www.upwork.com",
+    "path": "/",
+    "expires": 1611956277.730562,
+    "size": 106,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  }
+]
