@@ -4,7 +4,9 @@ const app = express();
 const puppeteer = require('puppeteer');
 const port = process.env.PORT || 8080;
 const validUrl = require('valid-url');
-const urlToScreenshot = 'http://yandex.com'
+const urlToScreenshot = 'https://yandex.ru'
+
+console.log('HEADLESS MODE = '+process.env.HEADLESS)
 
 var parseUrl = function(url) {
     url = decodeURIComponent(url)
@@ -15,26 +17,41 @@ var parseUrl = function(url) {
     return url;
 };
 
+let browser,page;
+
+
+const nonHeadFlag = {
+    executablePath: 'google-chrome-stable',
+    headless: false,
+};
+
+(async () => {
+    
+    browser = await puppeteer.launch(Object.assign({
+        args: ['--no-sandbox', '--disable-setuid-sandbox']},
+        process.env.HEADLESS === 'false' ? nonHeadFlag : void null));
+
+    page = await browser.newPage();
+    await page.goto(urlToScreenshot);
+    
+  })();
+
+
 app.get('/', function(req, res) {
 
     console.log('Screenshotting: ' + urlToScreenshot);
     
     (async() => {
-        const browser = await puppeteer.launch({
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
+
+        await page.screenshot().then(function(buffer) {
+            res.setHeader('Content-Disposition', 'attachment;filename="' + urlToScreenshot + '.png"');
+            res.setHeader('Content-Type', 'image/png');
+            res.send(buffer)
         });
 
-        const page = await browser.newPage();
-        await page.goto(urlToScreenshot);
-        // await page.screenshot().then(function(buffer) {
-        //     res.setHeader('Content-Disposition', 'attachment;filename="' + urlToScreenshot + '.png"');
-        //     res.setHeader('Content-Type', 'image/png');
-        //     res.send(buffer)
-        // });
-
-        await browser.close();
+        // await browser.close();
     })();
-    res.send(urlToScreenshot)
+    // res.send(urlToScreenshot)
 
 });
 
