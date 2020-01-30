@@ -37,7 +37,7 @@ const nonHeadFlag = {
   })();
 
 
-app.get('/', function(req, res) {
+app.get('/ya', function(req, res) {
 
     console.log('Screenshotting: ' + urlToScreenshot);
     
@@ -54,6 +54,14 @@ app.get('/', function(req, res) {
     // res.send(urlToScreenshot)
 
 });
+
+
+app.get('/', function(req, res) {
+
+   res.send('HEYY')
+
+});
+
 
 app.listen(port, function() {
     console.log('App listening on port ' + port)
