@@ -40,9 +40,9 @@ let LoadCookies = async (page) =>{
 (async () => {
     
     browser = await puppeteer.launch(Object.assign({
-        args: ['--no-sandbox', '--disable-setuid-sandbox']},
+        args: ['--no-sandbox', '--disable-setuid-sandbox','--disable-dev-shm-usage']},
 	{slowMo:10},
-        process.env.HEADLESS === 'false' ? nonHeadFlag : void null));
+        process.env.HEADLESS === 'false' ? nonHeadFlag : {headless:true}));
 
     page = await browser.newPage();
     await page.setViewport(viewPort);
