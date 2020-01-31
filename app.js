@@ -41,8 +41,7 @@ let LoadCookies = async (page) =>{
     
     browser = await puppeteer.launch(Object.assign({
         args: ['--no-sandbox', '--disable-setuid-sandbox']},
-	{executablePath: 'google-chrome-stable',
-	slowMo:10},
+	{slowMo:10},
         process.env.HEADLESS === 'false' ? nonHeadFlag : void null));
 
     page = await browser.newPage();
