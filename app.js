@@ -1,10 +1,14 @@
 
+import login from ./passwords.js
+
 const express = require('express');
 const app = express();
 const puppeteer = require('puppeteer');
 const port = process.env.PORT || 8080;
 const validUrl = require('valid-url');
-const urlToScreenshot = 'https://www.upwork.com/ab/jobs/search/t/1/?ontology_skill_uid=1031626755474440192&sort=recency'
+//const urlToScreenshot = 'https://www.upwork.com/ab/jobs/search/t/1/?ontology_skill_uid=1031626755474440192&sort=recency'
+const urlToScreenshot = 'https://www.alibaba.com/trade/search?IndexArea=product_en&CatId=&fsb=y&viewtype=&tab=&SearchText=Pyrometer+Infrared'
+
 const fs = require('fs').promises;
 
 console.log('HEADLESS MODE = '+process.env.HEADLESS)
@@ -47,8 +51,15 @@ let LoadCookies = async (page) =>{
     page = await browser.newPage();
     await page.setViewport(viewPort);
     await LoadCookies(page);
-    await page.goto(urlToScreenshot);
+    await page.goto('https://passport.alibaba.com/icbu_login.htm?origin=login.alibaba.com&flag=1&return_url=https%3A%2F%2Fmessage.alibaba.com%2Fmessage%2Fdefault.htm');
+    page.querySelector('').value = 'henrycla'
+    page.querySelector('').value = ''
+    await page.querySelector('').click();
+    
+   // await page.goto(urlToScreenshot);
+    
   })();
+
 
 
 app.get('/ya', function(req, res) {
