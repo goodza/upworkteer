@@ -1,2 +1,1 @@
-null
-0x00
+demo

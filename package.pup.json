@@ -1,0 +1,29 @@
+{
+  "name": "headless-chrome",
+  "engines": {
+    "node": "^12.13.1"
+  },
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@types/express": "^4.17.3",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "nodemon": "^2.0.2",
+    "puppeteer": "^2.0.0",
+    "puppeteer-extra-plugin-recaptcha": "^3.1.10",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "HEADLESS=false nodemon",
+    "start-ali": "node ali.js",
+    "start": "tsc && node built/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
