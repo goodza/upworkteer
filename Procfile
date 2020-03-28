@@ -1,1 +1,1 @@
-web: yarn serve
+web: ./node_modules/.bin/serve --listen $PORT ./dist
