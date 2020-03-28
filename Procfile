@@ -1,1 +1,1 @@
-web: yarn start
+web: ./serve --listen $PORT ./dist
