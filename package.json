@@ -47,7 +47,7 @@
         "react-admin": "^3.3.3",
         "react-dom": "^16.9.0",
         "serve": "^11.3.0",
-	"websocket-extensions":'^0.1.4",
-	"serialize-javascript":^2.1.1"
+	"websocket-extensions":"^0.1.4",
+	"serialize-javascript":"^2.1.1"
     }
 }
